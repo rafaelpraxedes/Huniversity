@@ -1,0 +1,200 @@
+/* general styles */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* padded section */
+.pad-section {
+    padding: 50px 0;
+}
+.pad-section img {
+    width: 100%;
+}
+
+.lead { text-align: justify; }
+.justify { text-align: justify; }
+.italic { font-style: italic; }
+.large { font-size: 18px; }
+
+/* vertical-centered text */
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+}
+.text-vcenter h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+#homePitch{
+    color: #ffffff;
+    width: 70%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    border: solid;
+}
+
+#navWrapper {
+    background-color: #1BA4FF;
+    color: #ffffff;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border: none;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #5E5E5E;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+
+/* additional sections */
+#home {
+    background: url(images/sunrise-city2.jpg) no-repeat center center fixed;
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover; !important;
+    -moz-background-size: cover;    !important;
+    -o-background-size: cover;      !important;
+    background-size: cover;         !important;
+}
+
+#about {
+}
+
+#mobile-image {
+    background: url(images/tablet-mobile2.jpg) no-repeat center center fixed;
+    position: relative;
+    display: table;
+    height: 400px;
+    width: 100%;
+    -webkit-background-size: cover; !important;
+    -moz-background-size: cover;    !important;
+    -o-background-size: cover;      !important;
+    background-size: cover;         !important;
+}
+
+#services {
+    background-color: #1BA4FF;
+    color: #ffffff;
+}
+
+#information {
+    background-color: #D7D7D7;
+    position: relative;
+    display: table;
+    min-height: 700px;
+    width: 100%;
+}
+
+#information .panel {
+    opacity: 0.85;
+}
+
+.panel-body lead { font-size: 14px; }
+
+#info-list li { margin-left: -15px;}
+
+.info-images {
+    max-height: 298px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#people-image {
+    background: url(images/people2.jpg) no-repeat center center fixed;
+    position: relative;
+    display: table;
+    height: 400px;
+    width: 100%;
+    -webkit-background-size: cover; !important;
+    -moz-background-size: cover;    !important;
+    -o-background-size: cover;      !important;
+    background-size: cover;         !important;
+}
+
+
+#aboutUs {
+    background-color: #1BA4FF;
+    color: #ffffff;
+}
+
+#contact {
+    background-color: #017DCD;
+    color: #ffffff;
+}
+
+footer {
+    padding: 0; margin: 0;
+}
+
+#navFooter {
+    padding: 0; margin: 0;
+}
+
+#navWrapper2 {
+    background-color: #017DCD;
+    color: #ffffff;
+}
+
+#copyright { padding-top: 15px;}
+
+footer .glyphicon {
+    color: #333333;
+    font-size: 60px;
+}
+
+footer .glyphicon:hover {
+    color: #306d9f;
+}
+
+/* From Small Devices, Tablets to Desktops */
+@media only screen and (min-width : 768px) {
+
+    #homePitch{
+        color: #ffffff;
+        width: 50%;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 15%;
+        border: solid;
+    }
+
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Script Tutorials"/>
+    <title> Hospital University </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- attach CSS styles -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- attach JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    
+    <!-- Specific Links -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script type="text/javascript">
+      // For this lab, you will be manipulating the DOM using jQuery.
+      $(document).ready(function(){
+          // You will put all your work inside this section
+
+        //Start To hide menu bar when a menu item is clicked
+             jQuery(".nav a, .navbar-header a").click(function(event) {
+                        // check if window is small enough so dropdown is created
+                       jQuery(".navbar-collapse").removeClass("in").addClass("collapse");
+                });
+        //End of To hide menu bar when a menu item is clicked  
+
+      })
+    </script>
+    
+</head>
+<body>
+    <!--  BODY PAGE CONTENT -->
+
+    <!-- navigation panel -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid" id="navWrapper">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hospital University</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Products & Services</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- first section - Home -->
+    <div id="home" class="home">
+        <div class="text-vcenter">
+            <div id="homePitch">
+                THE NEW AGE OF HEALTHCARE SYSTEMS.
+            </div>
+            <a href="#about" class="btn btn-default btn-lg">Continue</a>
+        </div>
+    </div>
+    <!-- /first section -->
+
+    <!-- second section - About -->
+    <div id="about" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/logo-text.png" alt="" />
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h2>Healthcare cloud platform to modernize the research and management of medical practice.</h2>
+                    <p class="lead">Hospital University applications will provide an alternative to current format of work which doctors and other health professionals have experienced using information systems of hospitals.
+                    Our purpose is to help those who care for people's health. Our applications will work as the way doctors work, not the opposite of that.</p>
+                    <p class="lead"> <i class="fa fa-mobile fa-3x"></i> Our applications are all mobile first. The power of information and technology in your hands!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /second section -->
+
+    <!-- General Image -->
+    <div id="mobile-image" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  --> 
+
+    <!-- third section - Services -->
+    <div id="services" class="pad-section">
+        <div class="container">
+            <h2 class="text-center">Our Products and Services</h2> <hr />
+            <div class="row text-center">
+                <div class="col-sm-3 col-xs-12">
+                    <i class="fa fa-stethoscope fa-5x"></i>
+                    <h3>Health Records and Research</h3>
+                    <p class="justify">Powerful tool which supports medical researching. Create your own research model, integrate it with many different systems, collaborate with other professionals and teams. See the results graphically in many ways you want.</p>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <i class="fa fa-medkit fa-5x"></i>
+                    <h3>Orthoses and Prostheses Management</h3>
+                    <p class="justify">Manage your use of Orthoses and Prostheses, from surgery plan to post-surgery assistance to patients. Visually choose your O&P list, receive updates from suppliers, check availability and authorization from hospitals and healthcare plans. See statistics of using graphically. Integrate and collaborate with "Health Records and Research" tool.</p>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <i class="fa fa-cloud-upload fa-5x"></i>
+                    <h3>ERP Integration consulting</h3>
+                    <p class="justify">You can use our applications independently of any external system. On the other hand, it's also possible to integrate them to many different systems. We have many and many years of experience on systems integration and we do it the best way possible. We use the latest technologies and management practices.</p>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <i class="fa fa-user-md fa-5x"></i>
+                    <h3>Medical Research consulting</h3>
+                    <p class="justify"> We have in our team an experienced cardiovascular Doctor, who also has great experience doing researches. Like all of us, also loves technology and wants to use it to improve more and more healthcare and medical sciences. He can help you to think about your research model in order to get the best results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /third section -->
+    
+    <!-- fourth section - Information -->
+    <div id="information" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title strong">Health Records and Research</h2>
+                        </div>
+                        <div class="panel-body lead">
+                            <img src="images/indicators-labels.jpg" alt="HU Indicators">
+                            <p class="italic"><br/> “multi function and multi niche electronic form aimed to meet the needs of academic research and professional development.”</p>
+                            <ul id="info-list">
+                                <li>Doctors and teams will have an tailored app, made with the latest technology and designed for use on tablets and phones.</li>
+                                <li>We will help you to collect and analyze information faster and better.</li>
+                                <li>You can create custom researches from samples, using questions created by experts in your area.</li>
+                                <li>Control the progress of your research. Set goals, deadlines and participants of your team.</li>
+                                <li>Share your research with colleagues and teams, integrating your research with processes and systems within hospital where you work.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Technologies</h2>
+                        </div>
+                        <div class="panel-body lead">
+                            <p> We love technology and our experts are always studying and using the most modern technologies from IT industry, providing you the state of the art of technology, combining it with your business needs. </p>
+                            <p>Our current stack of Technologies:</p>
+                            <div class="info-images">
+                                <img src="images/JEE-diagram.jpg" alt="JEE diagram">
+                            </div>
+                            <p><br/> Our next stack of Technologies:</p>
+                            <div class="info-images">
+                                <img src="images/mean-diagram.jpg" alt="Mean diagram">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /fourth section -->
+
+    
+    <!-- General Image 2 -->
+    <div id="people-image" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->    
+    
+    
+    <!-- fifth section -->
+    <div id="aboutUs" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>About Us</h2> <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p class="large">We have together over 60 years of experience within IT industry and over 20 years of experience with healthcare systems. Our cardiovascular Doctor really has boosted this team, giving medical and researching knowledge which has helped us to create the best tools for you in order to improve your IT needs combined with your healthcare, medical and research needs.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <hr >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1 text-center">
+                </div>
+                <div class="col-sm-2 text-center">
+                    <img src="images/Andre.jpg">
+                    <h4>Andre Correa</h4>
+                    <p>Web Designer</p>
+                    <p>UX Specialist</p>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <img src="images/Cristiano.jpg">
+                    <h4>Cristiano Quadros</h4>
+                    <p>Software Architect</p>
+                    <p>Full-stack Developer </p>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <img src="images/Humberto.jpg">
+                    <h4>Dr. Humberto Vaz</h4>
+                    <p>Cardiologist</p>
+                    <p>Researcher</p>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <img src="images/Rafael.jpg">
+                    <h4>Rafael Soares</h4>
+                    <p>Project Manager</p>
+                    <p>Business System Analyst</p>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <img src="images/Tiago.jpg">
+                    <h4>Tiago Vaz</h4>
+                    <p>IT Manager</p>
+                    <p>Marketing & Sales</p>
+                </div>
+                <div class="col-sm-1 text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /fifth section -->
+    
+    <!-- sixth section -->
+    <div id="contact" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-5 text-center">
+                </div>
+                <div class="col-xs-8 col-sm-2 text-center">
+                    <img src="images/logo.png">
+                </div>
+                <div class="col-xs-2 col-sm-5 text-center">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <h3>Contact Us</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <i class="fa fa-envelope fa-3x"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-sm-4 text-center">
+                </div>
+                <div class="col-xs-2 col-sm-1 text-center">
+                    <i class="fa fa-facebook-official fa-3x"></i>
+                </div>
+                <div class="col-xs-2 col-sm-1 text-center">
+                    <i class="fa fa-linkedin-square fa-3x"></i>
+                </div>
+                <div class="col-xs-2 col-sm-1 text-center">
+                    <i class="fa fa-twitter fa-3x"></i>
+                </div>
+                <div class="col-xs-2 col-sm-1 text-center">
+                    <i class="fa fa-youtube-play fa-3x"></i>
+                </div>
+                <div class="col-xs-2 col-sm-4 text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /sixth section -->
+
+    <!-- footer -->
+    <footer>
+        <!--<hr />-->
+        <nav class="navbar navbar-default" role="navigation" id="navFooter">
+            <div class="container-fluid" id="navWrapper2">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                </ul>
+                <div id="copyright">
+                    <p class="text-right">Copyright &copy; Hospital University 2016</p>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>        
+    </footer>
+    <!-- /footer -->
+        
+</body>
+</html>
